@@ -45,6 +45,8 @@ public class Main {
             pinigai();
         }   else if (ats.equals("baigti")){
             pabaiga = true;
+        }   else {
+            VcsUtils.println("Nesuprantama ivestis!");
         }
         }
 
