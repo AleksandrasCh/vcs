@@ -6,4 +6,12 @@ package lt.vcs;
  */
 public class Program {
     
+    public void start(){
+        doStuff();
+    }
+    
+    private void doStuff(){
+        
+    }
+    
 }

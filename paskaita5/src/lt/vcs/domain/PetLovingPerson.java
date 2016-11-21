@@ -22,6 +22,7 @@ public class PetLovingPerson extends Person implements PetLover{        // kai k
   }
 
     public Pet getPet() {
+        VcsUtils.println("I have a pet");
         return pet;
     }
 
