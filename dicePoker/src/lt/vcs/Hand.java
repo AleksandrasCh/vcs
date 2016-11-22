@@ -33,9 +33,16 @@ public class Hand {
     public static String getResult(int[] dice) {
         int[] counts = getCounts(dice);
         String resValue = " ";
+        
+        
+            println("");
+        for(int i = 0; i < counts.length; i++){
+            
+            println(counts[i]+"");
+        }
 
         for (int i = 0; i < counts.length; i++) {
-
+            
             if (counts[i] == 5) {
                 resValue = "Five of a kind ";
                 break;
@@ -44,7 +51,7 @@ public class Hand {
             } else if (counts[i] == 3) {
                 resValue = "Three of a Kind ";
                 for (int j = 0; j < counts.length; j++) {
-                    if (counts[j] == 2) {
+                    if (counts[j] == 2) {                   
                         resValue = "Full House "; break;
                     }
                 }
@@ -52,7 +59,7 @@ public class Hand {
             } else if (counts[i] == 2) {
                  resValue = "One Pair ";
                 for (int j = 0; j < counts.length; j++) {
-                    if (counts[j] == 2 && counts[i] == 2) {
+                    if (counts[j] == 2) {
                         resValue = "Two Pairs "; break;
                     }
                 }
@@ -61,6 +68,7 @@ public class Hand {
                 resValue = "Nothing ";
             }
         }
+        
         return resValue;
     }
     
