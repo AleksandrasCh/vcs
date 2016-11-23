@@ -94,8 +94,8 @@ public class Game {
                     } else if (p2choice == 2){
                         //baigti zaidima
                     }
-            }
-            
+            }   else if (p1choice == 2){
+                
             p2choice = inputInt(p2.getName() + " , ar kelsite statyma? (1 = taip; 2 = ne)");
             
             if(p2choice == 1){
@@ -116,6 +116,9 @@ public class Game {
             }   else if (p2choice == 2){
                 reRoll();   // reroll be kelimo
             }
+            
+            }
+            
             
 
             Player winner = kasLaimejo(p1, p2);
